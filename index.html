@@ -55,8 +55,13 @@
 </head>
 <body>
   <h1>All the best!!</h1>
-  <div class="subtext">Select MCA Section</div>
+  <div class="subtext">Select Section</div>
   <a href="https://forms.gle/JccQDPp3tgtQXQad8" class="button-link" target="_blank">MCA A</a>
-  <a href="https://forms.gle/QybB9RGawLTKCWs38" class="button-link" target="_blank">MCA B</a>
+  <a href="#" class="button-link disabled" onclick="showError()">MCA B</a>
+  <script>
+  function showError() {
+    alert("You are not belongs to MCA B. Select proper section!");
+  }
+</script>
 </body>
 </html>
