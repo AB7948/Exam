@@ -7,29 +7,31 @@
     body {
       margin: 0;
       padding: 0;
-      height: 100vh;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec);
+      background: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      color: #333;
+      height: 100vh;
+      backdrop-filter: brightness(0.8);
     }
 
     h1 {
-      font-size: 2.5em;
+      font-size: 2.8em;
       font-weight: bold;
       margin-bottom: 10px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
     }
 
-    p.quote {
-      font-style: italic;
-      font-size: 1.1em;
-      color: #555;
+    .subtext {
+      font-size: 1.4em;
       margin-bottom: 40px;
-      text-align: center;
-      max-width: 400px;
+      color: #f0f0f0;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
     }
 
     .button-link {
@@ -41,7 +43,7 @@
       color: white;
       background-color: #007BFF;
       border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
@@ -52,7 +54,8 @@
   </style>
 </head>
 <body>
-  <h1>Select Section</h1>
+  <h1>All the best!!</h1>
+  <div class="subtext">Select MCA Section</div>
   <a href="https://forms.gle/JccQDPp3tgtQXQad8" class="button-link" target="_blank">MCA A</a>
   <a href="https://forms.gle/QybB9RGawLTKCWs38" class="button-link" target="_blank">MCA B</a>
 </body>
